@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="expencetracker.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <img src="C:\Users\D E L L\Downloads\EXPENSE TRACER.png" width="1200px" height="400px">
+    
+     <div class="top-section">
+    <div class="box">
+      SALARY
+      <div class="salary" id="salaryAmount">₹<input type="number" id="amount"></div>
+    </div>
+    <div class="box">
+      EXPENSE
+      <div class="salary" id="expenseAmount">₹<input type="number" id="totalExpense" readonly/></div>
+    </div>
+    <div class="box">
+      SAVINGS
+      <div class="salary" id="savingsAmount">₹<input type="number" id="savings" readonly/></div>
+    </div>
+  </div>
+
+    <div class="content">
+    <div>
+      <table>
+        <tr><th colspan="2">EXPENSE LIST</th></tr>
+        <tr><td>Transport</td><td><input type="number" id="transport"></td></tr>
+        <tr><td>Shopping</td><td><input type="number" id="shopping"></td></tr>
+        <tr><td>Health</td><td><input type="number" id="health"></td></tr>
+        <tr><td>Education</td><td><input type="number" id="education"></td></tr>
+        <tr><td>Groceries</td><td><input type="number" id="groceries"></td></tr>
+        <tr><td>Restaurant</td><td><input type="number" id="restaurant"></td></tr>
+        <tr><td>Gifts</td><td><input type="number" id="gifts"></td></tr>
+        <tr><td>Pets</td><td><input type="number" id="pets"></td></tr>
+      </table>
+
+
+
+    <div class="calculate">
+
+    <button onclick=calculate() class="glow-on-hover" type="button">calculate</button>
+    </div>
+
+    <canvas id="expenseChart"></canvas>
+  </div>
+
+  <script src="expencetracker.js"></script>
+  
+</body>
+</html>
